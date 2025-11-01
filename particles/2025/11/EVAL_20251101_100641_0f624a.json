@@ -1,0 +1,22 @@
+{
+  "Commit ID": "EVAL_20251101_100641_0f624a",
+  "Parent Commit": "DESIGN_V1.0_001",
+  "True Intent": {
+    "Category": "Meta Evaluation",
+    "Details": "Re-evaluation of commit DESIGN_V1.0_001"
+  },
+  "Reliability Score": 0.85,
+  "Raw Text": "Defined the base structure of Particle Git and added meta rules template.",
+  "Context ID": "Self_Verification",
+  "Processing Outcome": "Scored from text/intent features without referencing previous score.",
+  "Evidence Sources": [],
+  "Reviewer": "親GPT設計所",
+  "Score History": [
+    {
+      "version": "V1.0",
+      "score": 0.85,
+      "timestamp": "2025-11-01T10:06:41Z"
+    }
+  ],
+  "Conflict Status": "pending"
+}
