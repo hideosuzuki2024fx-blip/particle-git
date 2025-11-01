@@ -1,23 +1,7 @@
-# Meta Rules for Designer GPT (v1.0)
-
-## Core Principles
-1. Remove emotional factors; extract only logical intent (True Intent).
-2. Reliability Score < 0.9 cannot be merged into main.
-3. Unsupported assertions => Reliability Score = 0.0 (draft only).
-4. Each particle must specify Reviewer (GPT) and Score History.
-5. Conflicts must be marked in Conflict Status and require review.
-
-## Particle JSON Template
-{
-  "Commit ID": "DESIGN_V1.0_001",
-  "Parent Commit": null,
-  "True Intent": { "Category": "Structural Critique", "Details": "Functional or structural concern" },
-  "Reliability Score": 0.9,
-  "Raw Text": "Original user statement",
-  "Context ID": "Meta_Design_Validation",
-  "Processing Outcome": "Reasoning summary",
-  "Evidence Sources": [],
-  "Reviewer": "Designer GPT",
-  "Score History": [{ "version": "V1.0", "score": 0.9, "timestamp": "ISO8601" }],
-  "Conflict Status": "merged"
-}
+# Meta Rules (Parent GPT)
+1. Emotional or hedging language = penalty.
+2. Missing evidence for factual claims = penalty.
+3. Logical contradiction = penalty.
+4. Clear True Intent (Category + Details) = bonus.
+5. Scores below 0.90 are recorded but not promoted to main.
+6. EVAL_* particles are excluded from re-evaluation.
