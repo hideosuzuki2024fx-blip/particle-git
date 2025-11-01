@@ -1,0 +1,22 @@
+{
+  "Commit ID": "EVAL_20251101_100832_0f4d9f",
+  "Parent Commit": "AUTO_20251101_093333_100b79",
+  "True Intent": {
+    "Category": "Meta Evaluation",
+    "Details": "Re-evaluation of commit AUTO_20251101_093333_100b79"
+  },
+  "Reliability Score": 0.85,
+  "Raw Text": "粒子Gitの更新作業を自動化する方法を検討したい。",
+  "Context ID": "Self_Verification",
+  "Processing Outcome": "Scored from text/intent features without referencing previous score.",
+  "Evidence Sources": [],
+  "Reviewer": "親GPT設計所",
+  "Score History": [
+    {
+      "version": "V1.0",
+      "score": 0.85,
+      "timestamp": "2025-11-01T10:08:32Z"
+    }
+  ],
+  "Conflict Status": "pending"
+}
