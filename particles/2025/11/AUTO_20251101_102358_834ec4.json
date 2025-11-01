@@ -1,0 +1,22 @@
+{
+  "Commit ID": "AUTO_20251101_102358_834ec4",
+  "Parent Commit": "DESIGN_V1.0_002",
+  "True Intent": {
+    "Category": "Evidence Integration",
+    "Details": "Requiring explicit sources and citations."
+  },
+  "Reliability Score": 1.0,
+  "Raw Text": "証拠URLを明記してから主張するべきでは？ https://example.com/paper",
+  "Context ID": "Auto_Evolution_SelfLearn",
+  "Processing Outcome": "Self-adjusted by policy (trend=decrease).",
+  "Evidence Sources": [],
+  "Reviewer": "親GPT設計所",
+  "Score History": [
+    {
+      "version": "V1.0",
+      "score": 1.0,
+      "timestamp": "2025-11-01T10:23:58Z"
+    }
+  ],
+  "Conflict Status": "pending"
+}
