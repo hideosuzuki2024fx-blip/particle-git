@@ -1,0 +1,22 @@
+{
+  "Commit ID": "EVAL_20251101_100835_60f373",
+  "Parent Commit": "AUTO_20251101_093335_d8c5dd",
+  "True Intent": {
+    "Category": "Meta Evaluation",
+    "Details": "Re-evaluation of commit AUTO_20251101_093335_d8c5dd"
+  },
+  "Reliability Score": 0.85,
+  "Raw Text": "粒子Gitの構造は柔軟だが、バージョン管理の一貫性が課題だ。",
+  "Context ID": "Self_Verification",
+  "Processing Outcome": "Scored from text/intent features without referencing previous score.",
+  "Evidence Sources": [],
+  "Reviewer": "親GPT設計所",
+  "Score History": [
+    {
+      "version": "V1.0",
+      "score": 0.85,
+      "timestamp": "2025-11-01T10:08:35Z"
+    }
+  ],
+  "Conflict Status": "pending"
+}
