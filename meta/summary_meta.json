@@ -1,0 +1,64 @@
+{
+  "last_update": "2025-11-01T10:13:50Z",
+  "total_particles": 21,
+  "average_reliability": 0.875,
+  "details": {
+    "AUTO": {
+      "scores": [
+        0.93,
+        0.95,
+        0.91,
+        0.93,
+        0.91,
+        0.95,
+        0.9
+      ],
+      "count": 7,
+      "avg": 0.926,
+      "min": 0.9,
+      "max": 0.95
+    },
+    "EVAL": {
+      "scores": [
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85
+      ],
+      "count": 14,
+      "avg": 0.85,
+      "min": 0.85,
+      "max": 0.85
+    },
+    "categories": {
+      "Operational Automation": 2,
+      "Reliability Framework": 1,
+      "Structural Consistency": 2,
+      "Meta Evaluation": 14,
+      "Meta Infrastructure Initialization": 1,
+      "General Reflection": 1
+    }
+  },
+  "category_distribution": {
+    "Operational Automation": 2,
+    "Reliability Framework": 1,
+    "Structural Consistency": 2,
+    "Meta Evaluation": 14,
+    "Meta Infrastructure Initialization": 1,
+    "General Reflection": 1
+  },
+  "trend_analysis": "decrease",
+  "recommendations": [
+    "System stable; continue iteration."
+  ]
+}
