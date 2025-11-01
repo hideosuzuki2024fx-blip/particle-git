@@ -1,0 +1,7 @@
+{
+  "Operational Automation": ["automation", "batch", "schedule"],
+  "Reliability Framework": ["score", "criteria", "threshold"],
+  "Evidence Integration": ["citation", "url", "doi", "data"],
+  "Meta Evaluation": ["eval", "self-verify", "trend"],
+  "General Reflection": []
+}
