@@ -1,0 +1,22 @@
+{
+  "Commit ID": "5c586593-d56d-45a2-b26d-8e3c4e7c44d6",
+  "Parent Commit": "gpt_design",
+  "True Intent": {
+    "Category": "Reliability Framework",
+    "Details": "信頼度スコアの計算方針を教えて"
+  },
+  "Reliability Score": 0.75,
+  "Raw Text": "要点: 信頼度スコアの計算方針を教えて",
+  "Context ID": "CTX_20251108092202",
+  "Processing Outcome": "record_only",
+  "Evidence Sources": [],
+  "Reviewer": "parent-gpt",
+  "Score History": [
+    {
+      "version": "V1.1",
+      "score": 0.75,
+      "timestamp": "2025-11-08T09:22:02.123489+00:00"
+    }
+  ],
+  "Conflict Status": "pending"
+}

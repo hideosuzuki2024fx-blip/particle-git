@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Reliability-GPT",
+  "name_for_model": "reliability_gpt",
+  "description_for_human": "信頼性評価とハルシネーション抑制を備えたAI応答エンジン。",
+  "description_for_model": "A hallucination-resistant GPT with reliability scoring and evidence verification pipeline.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://127.0.0.1:8000/openapi.json",
+    "has_user_authentication": false
+  },
+  "contact_email": "admin@localhost",
+  "legal_info_url": "http://127.0.0.1:8000/legal"
+}

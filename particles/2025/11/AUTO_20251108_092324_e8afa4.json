@@ -1,0 +1,24 @@
+{
+  "Commit ID": "92c88915-c54d-4637-bb1f-4ce5f5608779",
+  "Parent Commit": "gpt_design",
+  "True Intent": {
+    "Category": "Reliability Framework",
+    "Details": "最新の評価手順を要約して（Reliability Framework）"
+  },
+  "Reliability Score": 1.0,
+  "Raw Text": "要点: 最新の評価手順を要約して（Reliability Framework）",
+  "Context ID": "CTX_20251108092324",
+  "Processing Outcome": "promoted",
+  "Evidence Sources": [
+    "meta/summary_meta.json"
+  ],
+  "Reviewer": "parent-gpt",
+  "Score History": [
+    {
+      "version": "V1.1",
+      "score": 1.0,
+      "timestamp": "2025-11-08T09:23:24.174726+00:00"
+    }
+  ],
+  "Conflict Status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+  "Commit ID": "07cd13d6-a955-4f5d-bf13-917ed8b3b623",
+  "Parent Commit": "root",
+  "True Intent": {
+    "Category": "Reliability Framework",
+    "Details": "Scoring result storage test"
+  },
+  "Reliability Score": 1.0,
+  "Raw Text": "System achieved 0.95 reliability with verified evidence.",
+  "Context ID": "CTX_20251108081251",
+  "Processing Outcome": "promoted",
+  "Evidence Sources": [
+    "meta/summary_meta.json"
+  ],
+  "Reviewer": "parent-gpt",
+  "Score History": [
+    {
+      "version": "V1.1",
+      "score": 1.0,
+      "timestamp": "2025-11-08T08:12:51.899011+00:00"
+    }
+  ],
+  "Conflict Status": "pending"
+}

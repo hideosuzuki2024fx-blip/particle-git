@@ -1,0 +1,36 @@
+[2025-11-08 17:12:51,895] [INFO] Running self-tests...
+[2025-11-08 17:12:51,896] [INFO] Exporting particle to particles\2025\11\AUTO_20251108_081251_512fa0.json
+[2025-11-08 17:12:51,896] [INFO] Particle JSON saved successfully: particles\2025\11\AUTO_20251108_081251_512fa0.json
+[2025-11-08 17:12:51,897] [INFO] Exporting particle to particles\2025\11\EVAL_20251108_081251_850edb.json
+[2025-11-08 17:12:51,897] [INFO] Particle JSON saved successfully: particles\2025\11\EVAL_20251108_081251_850edb.json
+[2025-11-08 17:12:51,899] [INFO] Self-tests passed: particles\2025\11\AUTO_20251108_081251_512fa0.json, particles\2025\11\EVAL_20251108_081251_850edb.json
+[2025-11-08 17:12:51,899] [INFO] Running integration demo export...
+[2025-11-08 17:12:51,899] [INFO] Exporting particle to particles\2025\11\AUTO_20251108_081251_71136d.json
+[2025-11-08 17:12:51,900] [INFO] Particle JSON saved successfully: particles\2025\11\AUTO_20251108_081251_71136d.json
+[2025-11-08 17:12:51,900] [INFO] [Pipeline] Particle ready for downstream: particles\2025\11\AUTO_20251108_081251_71136d.json
+[2025-11-08 17:12:51,900] [INFO] Post-hook executed for particles\2025\11\AUTO_20251108_081251_71136d.json
+[2025-11-08 17:12:51,900] [INFO] Particle exported to: particles\2025\11\AUTO_20251108_081251_71136d.json
+[2025-11-08 17:26:08,848] [INFO] Running self-tests...
+[2025-11-08 17:26:08,849] [INFO] Exporting particle to particles\2025\11\AUTO_20251108_082608_ab3234.json
+[2025-11-08 17:26:08,849] [INFO] Particle JSON saved successfully: particles\2025\11\AUTO_20251108_082608_ab3234.json
+[2025-11-08 17:26:08,850] [INFO] Exporting particle to particles\2025\11\EVAL_20251108_082608_450f68.json
+[2025-11-08 17:26:08,850] [INFO] Particle JSON saved successfully: particles\2025\11\EVAL_20251108_082608_450f68.json
+[2025-11-08 17:26:08,850] [INFO] Self-tests passed: particles\2025\11\AUTO_20251108_082608_ab3234.json, particles\2025\11\EVAL_20251108_082608_450f68.json
+[2025-11-08 17:26:08,850] [INFO] Running integration demo export...
+[2025-11-08 17:26:08,851] [INFO] Exporting particle to particles\2025\11\AUTO_20251108_082608_20d32e.json
+[2025-11-08 17:26:08,851] [INFO] Particle JSON saved successfully: particles\2025\11\AUTO_20251108_082608_20d32e.json
+[2025-11-08 17:26:08,853] [INFO] [Pipeline] Particle ready for downstream: particles\2025\11\AUTO_20251108_082608_20d32e.json
+[2025-11-08 17:26:08,853] [INFO] Post-hook executed for particles\2025\11\AUTO_20251108_082608_20d32e.json
+[2025-11-08 17:26:08,853] [INFO] Particle exported to: particles\2025\11\AUTO_20251108_082608_20d32e.json
+[2025-11-08 18:23:17,873] [INFO] Running self-tests...
+[2025-11-08 18:23:17,874] [INFO] Exporting particle to particles\2025\11\AUTO_20251108_092317_563a83.json
+[2025-11-08 18:23:17,874] [INFO] Particle JSON saved successfully: particles\2025\11\AUTO_20251108_092317_563a83.json
+[2025-11-08 18:23:17,876] [INFO] Exporting particle to particles\2025\11\EVAL_20251108_092317_b3f8a9.json
+[2025-11-08 18:23:17,876] [INFO] Particle JSON saved successfully: particles\2025\11\EVAL_20251108_092317_b3f8a9.json
+[2025-11-08 18:23:17,876] [INFO] Self-tests passed: particles\2025\11\AUTO_20251108_092317_563a83.json, particles\2025\11\EVAL_20251108_092317_b3f8a9.json
+[2025-11-08 18:23:17,876] [INFO] Running integration demo export...
+[2025-11-08 18:23:17,876] [INFO] Exporting particle to particles\2025\11\AUTO_20251108_092317_745dd2.json
+[2025-11-08 18:23:17,877] [INFO] Particle JSON saved successfully: particles\2025\11\AUTO_20251108_092317_745dd2.json
+[2025-11-08 18:23:17,877] [INFO] [Pipeline] Particle ready for downstream: particles\2025\11\AUTO_20251108_092317_745dd2.json
+[2025-11-08 18:23:17,877] [INFO] Post-hook executed for particles\2025\11\AUTO_20251108_092317_745dd2.json
+[2025-11-08 18:23:17,877] [INFO] Particle exported to: particles\2025\11\AUTO_20251108_092317_745dd2.json

@@ -1,0 +1,24 @@
+{
+  "Commit ID": "1e6c9e94-18dc-48a9-aef9-49fb57b876c1",
+  "Parent Commit": "root",
+  "True Intent": {
+    "Category": "Reliability Framework",
+    "Details": "self-test 1"
+  },
+  "Reliability Score": 1.0,
+  "Raw Text": "ok-1",
+  "Context ID": "CTX_20251108092317",
+  "Processing Outcome": "promoted",
+  "Evidence Sources": [
+    "meta/summary_meta.json"
+  ],
+  "Reviewer": "parent-gpt",
+  "Score History": [
+    {
+      "version": "V1.1",
+      "score": 1.0,
+      "timestamp": "2025-11-08T09:23:17.874550+00:00"
+    }
+  ],
+  "Conflict Status": "pending"
+}

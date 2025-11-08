@@ -1,0 +1,22 @@
+[2025-11-08 17:17:39,573] [INFO] Running integration pipeline controller...
+[2025-11-08 17:17:39,573] [INFO] Collected 0 particle files.
+[2025-11-08 17:17:39,574] [INFO] Integration report saved: C:\Users\MaoGon\Projects\ai_dev_core\particle-git\integration_report.json
+[2025-11-08 17:17:39,574] [INFO] Summary: {'total_particles': 0, 'average_score': 0.0, 'promoted_count': 0, 'record_only_count': 0, 'timestamp': '2025-11-08T08:17:39.574437Z'}
+[2025-11-08 17:18:11,611] [INFO] Running integration pipeline controller...
+[2025-11-08 17:18:11,612] [INFO] Collected 25 particle files.
+[2025-11-08 17:18:11,758] [INFO] Integration report saved: C:\Users\MaoGon\Projects\ai_dev_core\particle-git\integration_report.json
+[2025-11-08 17:18:11,758] [INFO] Summary: {'total_particles': 25, 'average_score': 0.8612, 'promoted_count': 2, 'record_only_count': 1, 'timestamp': '2025-11-08T08:18:11.757894Z'}
+[2025-11-08 17:19:03,447] [INFO] Running integration pipeline controller...
+[2025-11-08 17:19:03,448] [INFO] Collected 25 particle files.
+[2025-11-08 17:19:30,854] [INFO] Running integration pipeline controller...
+[2025-11-08 17:19:30,855] [INFO] Collected 25 particle files.
+[2025-11-08 17:19:30,858] [INFO] Integration report saved: C:\Users\MaoGon\Projects\ai_dev_core\particle-git\integration_report.json
+[2025-11-08 17:19:30,859] [INFO] Summary: {'total_particles': 25, 'average_score': 0.8612, 'promoted_count': 2, 'record_only_count': 1, 'timestamp': '2025-11-08T08:19:30.858792+00:00Z'}
+[2025-11-08 17:26:10,929] [INFO] Running integration pipeline controller...
+[2025-11-08 17:26:10,930] [INFO] Collected 28 particle files.
+[2025-11-08 17:26:10,955] [INFO] Integration report saved: C:\Users\MaoGon\Projects\ai_dev_core\particle-git\integration_report.json
+[2025-11-08 17:26:10,955] [INFO] Summary: {'total_particles': 28, 'average_score': 0.8457, 'promoted_count': 4, 'record_only_count': 2, 'timestamp': '2025-11-08T08:26:10.954107+00:00Z'}
+[2025-11-08 18:23:19,953] [INFO] Running integration pipeline controller...
+[2025-11-08 18:23:19,954] [INFO] Collected 33 particle files.
+[2025-11-08 18:23:19,995] [INFO] Integration report saved: C:\Users\MaoGon\Projects\ai_dev_core\particle-git\integration_report.json
+[2025-11-08 18:23:19,995] [INFO] Summary: {'total_particles': 33, 'average_score': 0.8358, 'promoted_count': 7, 'record_only_count': 4, 'timestamp': '2025-11-08T09:23:19.995629+00:00Z'}

@@ -1,0 +1,22 @@
+{
+  "Commit ID": "7a353dd9-e3cb-4c4e-922d-64b394c33a10",
+  "Parent Commit": "root",
+  "True Intent": {
+    "Category": "Meta Evaluation",
+    "Details": "self-test 2"
+  },
+  "Reliability Score": 0.15,
+  "Raw Text": "ok-2",
+  "Context ID": "CTX_20251108092317",
+  "Processing Outcome": "record_only",
+  "Evidence Sources": [],
+  "Reviewer": "parent-gpt",
+  "Score History": [
+    {
+      "version": "V1.1",
+      "score": 0.15,
+      "timestamp": "2025-11-08T09:23:17.876062+00:00"
+    }
+  ],
+  "Conflict Status": "pending"
+}
