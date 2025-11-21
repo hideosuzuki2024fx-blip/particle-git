@@ -132,7 +132,7 @@ def _load_particles(particles_root: Path) -> List[Dict[str, Any]]:
     return particles
 
 
-def _aggregate(particles: List[Dict[str, Any]]) -> Dict[str, Any]]:
+def _aggregate(particles: List[Dict[str, Any]]) -> Dict[str, Any]:
     total = len(particles)
     status_counts: Dict[str, int] = {}
     intent_stats: Dict[str, Dict[str, Any]] = {}
