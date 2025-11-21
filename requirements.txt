@@ -1,5 +1,3 @@
-json
-logging
-pathlib
-uuid
-re
+# particle-git runtime requirements
+# 現時点では標準ライブラリのみを使用。
+# 追加ライブラリが必要になったらここに追記する。
