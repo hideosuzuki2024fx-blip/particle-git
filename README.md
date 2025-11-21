@@ -81,3 +81,64 @@ gpt_design.py などから書き出された粒子 JSON を保持する外部記
 3. `python gpt_design.py` を実行します。
 4. `gpt_design_preview.json` と `particles/YYYY/MM/AUTO_*.json` を開き、
    True Intent、Reliability Score、Processing Outcome が期待どおりに付与されているかを確認します。
+
+---
+
+## CLI: gpt_cli.py
+
+`gpt_cli.py` は、コマンドラインから GPTDesign を 1 回呼び出し、
+ポリシーに従って応答をゲートしたうえで粒子を書き出す CLI です。
+結果は JSON 形式で標準出力に返されます。
+
+### 使い方
+
+- 証拠なしで実行する場合（`require_evidence = true` のときは原則 record_only 扱い）:
+
+```bash
+python gpt_cli.py "信頼度スコアの計算方針を教えて"
+```
+
+- 証拠ありで実行する場合（例: `meta/summary_meta.json` を根拠としてマーク）:
+
+```bash
+python gpt_cli.py "最新の評価手順を要約して（Reliability Framework）" --evidence-source meta/summary_meta.json
+```
+
+出力 JSON には少なくとも次が含まれます。
+
+- `answer` : 実際に返された文面と、証拠を使ったかどうか
+- `evaluation` : score / status / bonuses / penalties
+- `true_intent` : Category / Details
+- `particle_meta` :
+  - `internal_commit_uuid` : GPTDesign 内部で採番した UUID
+  - `storage_commit_id` : 粒子ファイル名の stem（`AUTO_...`、V1 `"Commit ID"` と一致）
+  - `processing_outcome` : `promoted` / `record_only`
+  - `saved_path` : `particles/YYYY/MM/AUTO_*.json` へのパス
+
+`require_evidence = true` かつ証拠が渡されない場合、
+応答は「根拠の提示を求める」メッセージとなり、粒子は `record_only` として保存されます。
+
+## 集計パイプライン: integration_pipeline/aggregate_particles.py
+
+`integration_pipeline/aggregate_particles.py` は、保存済みの粒子を走査・集計して、
+`summary/particles_summary.json` に統計情報を出力するスクリプトです。
+
+### 使い方
+
+```bash
+python integration_pipeline/aggregate_particles.py
+```
+
+実行すると、少なくとも次の情報を含む JSON が生成されます。
+
+- `generated_at` : 集計を実行した日時
+- `total_particles` : 対象となった粒子の総数
+- `status_counts` : `promoted` / `record_only` 等のステータス別件数
+- `intents` : Intent Category ごとの統計
+  - `count` : 粒子件数
+  - `avg_score` : 平均スコア
+  - `promoted` : promoted 件数
+  - `record_only` : record_only 件数
+
+`summary/` 配下は `.gitignore` 済みであり、
+いつでも再生成可能な解析結果として扱います。
