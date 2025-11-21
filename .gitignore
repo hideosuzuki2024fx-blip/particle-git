@@ -1,2 +1,11 @@
 /summary/*.csv
 /logs/
+
+# Python cache / build
+__pycache__/
+*.pyc
+
+# Generated particles and logs
+particles/
+*.log
+repo_tree_local.txt
