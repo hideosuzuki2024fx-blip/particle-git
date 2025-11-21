@@ -1,7 +1,56 @@
 {
-  "report_average": 0.0,
-  "local_average": 0.8358,
-  "recommendations": [
-    "Maintain scoring balance; emphasize intent clarity."
-  ]
+  "generated_at": "2025-11-21T16:16:02.252918+00:00",
+  "particle_source_root": "C:\\Users\\MaoGon\\Projects\\ai_dev_core\\particle-git\\particles",
+  "total_particles": 27,
+  "avg_score": 0.9214814814814815,
+  "status_counts": {
+    "Automatically generated from internal reasoning cycle.": 5,
+    "Self-adjusted by policy (trend=decrease).": 1,
+    "promoted": 14,
+    "record_only": 7
+  },
+  "intent_stats": {
+    "Operational Automation": {
+      "count": 2,
+      "avg_score": 0.93,
+      "promoted": 0,
+      "record_only": 0
+    },
+    "Structural Consistency": {
+      "count": 2,
+      "avg_score": 0.91,
+      "promoted": 0,
+      "record_only": 0
+    },
+    "Reliability Framework": {
+      "count": 22,
+      "avg_score": 0.9181818181818181,
+      "promoted": 14,
+      "record_only": 7
+    },
+    "Evidence Integration": {
+      "count": 1,
+      "avg_score": 1.0,
+      "promoted": 0,
+      "record_only": 0
+    }
+  },
+  "current_policy": {
+    "mode": "strict",
+    "threshold": 0.9,
+    "require_evidence": true,
+    "hedging_language": false,
+    "factual_density": "high",
+    "emotional_tone": "neutral",
+    "source": "summary_meta.json"
+  },
+  "recommended_policy": {
+    "mode": "strict",
+    "threshold": 0.9,
+    "require_evidence": true,
+    "hedging_language": false,
+    "factual_density": "high",
+    "emotional_tone": "neutral"
+  },
+  "policy_explanation": "平均スコア 0.921 は現在の threshold 0.900 に近いため、threshold は現状維持を推奨します。\npromoted 比率 51.85% と record_only 比率 25.93% は極端ではないため、mode は現状維持とします。\nrequire_evidence は True のまま維持します（ログから自動的に緩和はしません）。"
 }
