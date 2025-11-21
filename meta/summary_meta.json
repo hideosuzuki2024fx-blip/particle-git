@@ -8,7 +8,25 @@
   "policy": {
     "mode": "strict",
     "threshold": 0.9,
-    "require_evidence": true
+    "require_evidence": true,
+    "hedging_language": false,
+    "factual_density": "high",
+    "emotional_tone": "neutral"
   },
-  "notes": "This file is the single source of truth for hallucination control policies used by gpt_design.py."
+  "notes": "This file is the single source of truth for hallucination control policies used by gpt_design.py.",
+  "policy_history": [
+    {
+      "applied_at": "2025-11-22T01:21:57.3086198+09:00",
+      "source": "optimizer",
+      "generated_at": "2025-11-22T01:16:02.252918+09:00",
+      "previous_policy": {
+        "mode": "strict",
+        "threshold": 0.9,
+        "require_evidence": true
+      },
+      "previous_mode": "strict",
+      "previous_threshold": 0.9,
+      "previous_require_evidence": true
+    }
+  ]
 }
