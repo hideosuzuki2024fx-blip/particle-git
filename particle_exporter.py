@@ -20,8 +20,25 @@ def export_particle(
     parent_commit: str,
 ) -> Path:
     """
-    粒子 JSON を particles/YYYY/MM/AUTO_*.json として保存する。
-    gpt_design.GPTDesign.generate() から呼ばれる前提。
+    V1 粒子スキーマで JSON を保存するエクスポータ。
+
+    出力例（キー構造）は AUTO_1761956191.json などの既存粒子に揃える：
+
+    {
+      "Commit ID": "AUTO_YYYYMMDD_HHMMSS_xxx",
+      "Parent Commit": "...",
+      "True Intent": { "Category": "...", "Details": "..." },
+      "Reliability Score": 0.93,
+      "Raw Text": "...",
+      "Context ID": "CTX_YYYYMMDDHHMMSS",
+      "Processing Outcome": "promoted / record_only など",
+      "Evidence Sources": [],
+      "Reviewer": "gpt-design",
+      "Score History": [
+        { "version": "DESIGN-1.1", "score": 0.93, "timestamp": "..." }
+      ],
+      "Conflict Status": "pending"
+    }
     """
     now = datetime.now()
     year = now.strftime("%Y")
@@ -31,22 +48,36 @@ def export_particle(
 
     ts = now.strftime("%Y%m%d_%H%M%S")
     suffix = uuid.uuid4().hex[:6]
-    filename = f"AUTO_{ts}_{suffix}.json"
+    commit_id = f"AUTO_{ts}_{suffix}"
+    filename = f"{commit_id}.json"
     out_path = dir_path / filename
 
-    payload = {
-        "particle_id": f"AUTO-{ts}-{suffix}",
-        "created_at": now.isoformat(),
-        "parent_commit": parent_commit,
-        "text": text,
-        "evaluation": evaluation,
-        "true_intent": true_intent,
-        "evidence_sources": evidence_sources,
+    score = float(evaluation.get("score", 0.0))
+    status = str(evaluation.get("status", "record_only"))
+
+    particle: Dict[str, Any] = {
+        "Commit ID": commit_id,
+        "Parent Commit": parent_commit,
+        "True Intent": true_intent,
+        "Reliability Score": score,
+        "Raw Text": text,
+        "Context ID": f"CTX_{ts}",
+        "Processing Outcome": status,
+        "Evidence Sources": evidence_sources or [],
+        "Reviewer": "gpt-design",
+        "Score History": [
+            {
+                "version": "DESIGN-1.1",
+                "score": score,
+                "timestamp": now.isoformat(),
+            }
+        ],
+        "Conflict Status": "pending",
     }
 
     out_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
+        json.dumps(particle, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    logger.info("Particle exported: %s", out_path)
+    logger.info("Particle exported (V1 schema): %s", out_path)
     return out_path
