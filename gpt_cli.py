@@ -2,6 +2,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+from pathlib import Path
 from typing import Any, Dict, Optional
 
 from gpt_design import GPTDesign, policy_from_summary_meta, export_particle  # type: ignore[attr-defined]
@@ -35,6 +36,8 @@ def run_once(prompt: str, evidence_source: Optional[str] = None) -> Dict[str, An
     px = result["particle"]
 
     saved_path: Optional[str] = None
+    storage_commit_id: Optional[str] = None
+
     if export_particle is not None:
         out_path = export_particle(
             text=px["Raw Text"],
@@ -47,6 +50,7 @@ def run_once(prompt: str, evidence_source: Optional[str] = None) -> Dict[str, An
             parent_commit=px["Parent Commit"],
         )
         saved_path = str(out_path)
+        storage_commit_id = Path(out_path).stem
         logger.info("Particle saved: %s", saved_path)
     else:
         logger.warning("export_particle is not available; particle not persisted.")
@@ -56,7 +60,10 @@ def run_once(prompt: str, evidence_source: Optional[str] = None) -> Dict[str, An
         "evaluation": evalr,
         "true_intent": px["True Intent"],
         "particle_meta": {
-            "commit_id": px["Commit ID"],
+            # gpt_design 内部で付与した UUID
+            "internal_commit_uuid": px["Commit ID"],
+            # 粒子ファイル名 = V1 粒子の 'Commit ID'
+            "storage_commit_id": storage_commit_id,
             "processing_outcome": px["Processing Outcome"],
             "saved_path": saved_path,
         },
