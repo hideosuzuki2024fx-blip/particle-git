@@ -9,3 +9,6 @@ __pycache__/
 particles/
 *.log
 repo_tree_local.txt
+
+# Generated summaries
+summary/
