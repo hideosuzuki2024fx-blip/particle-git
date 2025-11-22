@@ -1,0 +1,18 @@
+name: Integrity Check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Run Code Integrity Verification
+        shell: pwsh
+        run: ops/scripts/check_integrity.ps1
