@@ -142,3 +142,40 @@ python integration_pipeline/aggregate_particles.py
 
 `summary/` 配下は `.gitignore` 済みであり、
 いつでも再生成可能な解析結果として扱います。
+
+## Sources for GPT (Raw URLs)
+
+GPT がこのリポジトリのポリシー・設計・スキーマを参照するための Raw URL 一覧です。
+チャットから README の Raw URL が渡された場合、ここに列挙された URL を辿って内容を読み込むことを想定しています。
+
+- README (this file)
+  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/README.md
+
+- Policy / Meta rules
+  - meta/meta_rules.md  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/meta/meta_rules.md
+  - meta/eval_checklist.md  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/meta/eval_checklist.md
+  - meta/true_intent_glossary.md  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/meta/true_intent_glossary.md
+  - meta/summary_meta.json  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/meta/summary_meta.json
+
+- Core design / CLI
+  - gpt_design.py  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/gpt_design.py
+  - gpt_cli.py  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/gpt_cli.py
+  - gpts/meta_sync.py  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/gpts/meta_sync.py
+  - particle_exporter.py  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/particle_exporter.py
+
+- Particle schema / integration
+  - docs/particle_schema_v1.md  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/docs/particle_schema_v1.md
+  - integration_pipeline/aggregate_particles.py  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/integration_pipeline/aggregate_particles.py
+  - integration_pipeline/optimizer.py  
+    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/integration_pipeline/optimizer.py
+
