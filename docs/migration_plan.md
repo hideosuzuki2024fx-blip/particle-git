@@ -21,4 +21,5 @@
 
 ## マージ後の作業
 - [ ] docs/sources_for_gpt.md の main 参照を必要に応じて拡充
+- [x] 重複削減方針 → docs/policy_layering.md
 
