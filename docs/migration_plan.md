@@ -18,3 +18,7 @@
 
 ## 次の候補（README.legacy の残りに応じて追加）
 - [ ] 未収載の章があれば docs/ に新規作成して移植
+
+## マージ後の作業
+- [ ] docs/sources_for_gpt.md の main 参照を必要に応じて拡充
+
