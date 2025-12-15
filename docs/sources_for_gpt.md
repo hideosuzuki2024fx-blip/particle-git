@@ -19,6 +19,7 @@
 - rules/powershell.md
 - protocols/code-output.md
 - protocols/review.md
+- protocols/response-templates.md
 
 ## Docs (split from legacy README)
 - docs/overview.md
@@ -52,5 +53,6 @@
   https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/README.md
 - (main) README.md:
   https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/README.md
+
 
 
