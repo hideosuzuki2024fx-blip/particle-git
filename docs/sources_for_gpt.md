@@ -29,6 +29,7 @@
 - docs/migration_plan.md
 - docs/personalization_min_core.md
 - docs/personalization_min_core.txt
+- docs/consistency_checklist.md
 
 ## Policy / Meta rules (single source of truth)
 - meta/meta_rules.md
@@ -51,4 +52,5 @@
   https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/README.md
 - (main) README.md:
   https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/README.md
+
 
