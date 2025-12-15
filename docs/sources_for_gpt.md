@@ -1,46 +1,51 @@
 # Sources for GPT (Raw URLs)
 
-この一覧は、GPT が参照する「外部仕様ソース」です。
-マージ前は **ブランチ参照**（chore/external-spec-structure）を使ってください。
+この一覧は、GPT が参照してよい「外部仕様ソース」です。
+**Raw URL の base（ref）+ 相対パス**で管理します。
 
-## This PR branch (use before merge)
-- README
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/README.md
+## Base URL（ref）
+- マージ前（PR確認中）: https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/
+- マージ後（main）    : https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/
 
-- External behavior spec
-  - rules
-    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/rules/core.md
-    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/rules/web.md
-    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/rules/github.md
-    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/rules/powershell.md
-  - protocols
-    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/protocols/code-output.md
-    - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/protocols/review.md
+> 以降に列挙するパスは、上記 base の末尾に連結して使います。
 
-- Docs (split from legacy README)
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/docs/overview.md
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/docs/components.md
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/docs/quickstart.md
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/docs/cli.md
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/docs/pipeline.md
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/docs/migration_plan.md
+## Entry
+- README.md
 
-- Policy / Meta rules (single source of truth)
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/meta/meta_rules.md
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/meta/eval_checklist.md
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/meta/true_intent_glossary.md
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/meta/summary_meta.json
+## External behavior spec
+- rules/core.md
+- rules/web.md
+- rules/github.md
+- rules/powershell.md
+- protocols/code-output.md
+- protocols/review.md
 
-- Core design / CLI
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/gpt_design.py
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/gpt_cli.py
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/gpts/meta_sync.py
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/particle_exporter.py
+## Docs (split from legacy README)
+- docs/overview.md
+- docs/components.md
+- docs/quickstart.md
+- docs/cli.md
+- docs/pipeline.md
+- docs/migration_plan.md
 
-- Integration
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/integration_pipeline/aggregate_particles.py
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/integration_pipeline/optimizer.py
+## Policy / Meta rules (single source of truth)
+- meta/meta_rules.md
+- meta/eval_checklist.md
+- meta/true_intent_glossary.md
+- meta/summary_meta.json
 
-## Main branch (use after merge)
-- README
-  - https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/README.md
+## Core design / CLI
+- gpt_design.py
+- gpt_cli.py
+- gpts/meta_sync.py
+- particle_exporter.py
+
+## Integration
+- integration_pipeline/aggregate_particles.py
+- integration_pipeline/optimizer.py
+
+## Example
+- (PR ref) README.md:
+  https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/chore/external-spec-structure/README.md
+- (main) README.md:
+  https://raw.githubusercontent.com/hideosuzuki2024fx-blip/particle-git/main/README.md
