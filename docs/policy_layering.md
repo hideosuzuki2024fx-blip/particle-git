@@ -33,3 +33,7 @@
 - 同じルールをパーソナライズと rules/ に二重に書く
 - “一般論” で曖昧に補完して結論を作る
 - 参照できていないのに、参照できた体で説明する
+
+## Personalization Minimal Core
+- docs/personalization_min_core.md / .txt をテンプレとして使い、パーソナライズは最小コアに固定する
+

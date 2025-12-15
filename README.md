@@ -5,6 +5,7 @@ GPT は、ここに書かれていない仕様を推測で補完してはいけ�
 ポリシー（評価ルール/チェックリスト/意図カテゴリ等）の単一の情報源は `meta/` です。
 
 ## Documents
+- docs/personalization_min_core.md : パーソナライズ（1500文字）最小コアのテンプレ
 - docs/policy_layering.md : パーソナライズとrepoルールの重複削減方針
 - docs/overview.md : フレームワーク概要と Goals
 - docs/components.md : Core Components（役割の要約）
@@ -18,4 +19,5 @@ GPT は、ここに書かれていない仕様を推測で補完してはいけ�
 - protocols/code-output.md : コード提示時の出力プロトコル
 - protocols/review.md : 現状把握→問題点→改善案の提示プロトコル
 - docs/sources_for_gpt.md : GPTが参照してよいソース一覧（Raw URL）
+
 
