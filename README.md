@@ -4,6 +4,11 @@
 GPT は、ここに書かれていない仕様を推測で補完してはいけません。
 
 ## Documents
+- docs/overview.md : フレームワーク概要と Goals
+- docs/components.md : Core Components（役割の要約）
+- docs/quickstart.md : Quickstart
+- docs/cli.md : CLI（gpt_cli.py）
+- docs/pipeline.md : 集計パイプライン（aggregate_particles）
 - rules/core.md : 常時適用の基本制約（ハルシネーション抑制）
 - rules/web.md : URLが提示された場合のWeb取得・失敗時の報告規則
 - rules/github.md : GitHub関連（Raw URL優先など）

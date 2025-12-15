@@ -8,8 +8,13 @@
 - 出力形式（コード提示、レビュー構造など）は protocols/ に置く。
 - 参照URL一覧は docs/sources_for_gpt.md に集約する。
 
-## まず移す候補（チェックして埋める）
-- [ ] 目的/ゴール → docs/overview.md
-- [ ] 判断基準/スコア/判定ルール → rules/（新規ファイル or 既存へ追記）
-- [ ] CLI/運用フロー → docs/operations.md
-- [ ] 参照すべき Raw URL 一覧 → docs/sources_for_gpt.md（追記・整理）
+## 移行状況
+- [x] 目的/ゴール → docs/overview.md
+- [x] Core Components → docs/components.md
+- [x] Quickstart → docs/quickstart.md
+- [x] CLI → docs/cli.md
+- [x] 集計パイプライン → docs/pipeline.md
+- [x] Sources for GPT → docs/sources_for_gpt.md（統合）
+
+## 次の候補（README.legacy の残りに応じて追加）
+- [ ] 未収載の章があれば docs/ に新規作成して移植
