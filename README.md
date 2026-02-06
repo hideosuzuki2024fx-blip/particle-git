@@ -22,6 +22,17 @@ GPT は、ここに書かれていない仕様を推測で補完してはいけ�
 - protocols/review.md : 現状把握→問題点→改善案の提示プロトコル
 - docs/sources_for_gpt.md : GPTが参照してよいソース一覧（Raw URL）
 
+## Structure
+- `docs/`: 仕様・方針・運用ドキュメント
+- `rules/`: 常時適用ルール（core/web/github/powershell）
+- `protocols/`: 応答・出力プロトコル
+- `meta/`: ポリシーの単一ソース（taxonomy/checklist など）
+- `particles/`: 生成パーティクルデータ
 
+## Change Log
+### 2026-02-06
+- `build/`, `ai_core_gpt.egg-info/`, `ai_core_gpt/__pycache__/` を削除し、Python生成物を整理。
+- 実行ログ（`*.log`）のコミット済みファイルを削除。
+- `.gitignore` に `build/`, `dist/`, `*.egg-info/` を追加。
 
 
